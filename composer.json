@@ -1,0 +1,27 @@
+{
+    "name": "smmtglux/smm-api",
+    "description": "PHP client for the standard SMM API v2 used by social media marketing panels. Zero dependencies.",
+    "type": "library",
+    "keywords": ["smm", "smm-panel", "smm-api", "api-client", "telegram", "social-media-marketing", "reseller"],
+    "homepage": "https://smmtglux.com",
+    "license": "MIT",
+    "authors": [
+        { "name": "TGLUX", "homepage": "https://smmtglux.com" }
+    ],
+    "support": {
+        "docs": "https://smmtglux.com/api",
+        "issues": "https://github.com/SmmTGlux/smm-api-php/issues"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": { "Tglux\\Smm\\": "src/" }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "config": { "sort-packages": true }
+}
